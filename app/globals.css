@@ -41,7 +41,7 @@ section {
 }
 
 input[type="button"].primary {
-  @apply bg-emerald-500 text-white hover:bg-emerald-600 border border-emerald-700;
+  @apply bg-emerald-700 text-white hover:bg-emerald-600 border border-emerald-700;
 }
 
 input[type="button"] {
