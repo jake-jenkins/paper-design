@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-white text-black dark:bg-gray-800 dark:text-white text-lg;
+}
+
+.theme-bg {
+  @apply from-blue-700 from-0% via-blue-800 via-60% to-white/10 to-90% text-white opacity-95;
+}
+
+.theme-bg-light {
+  @apply bg-slate-50 border border-blue-600 shadow-blue-600 dark:border-blue-500 dark:shadow-blue-500 dark:bg-slate-900 shadow-lg;
+}
+
+h1, h2, h3, h4, h5 {
+  @apply mb-3 text-blue-800 dark:text-blue-400 font-medium;
+}
+
+h1 {
+  @apply text-5xl mb-5 font-extralight;
+}
+
+h2 {
+  @apply text-4xl;
+}
+
+h3, h4, h5 {
+  @apply text-3xl;
+}
+
+p {
+  @apply mb-4;
+}
+
+.banner {
+  @apply mb-8 rounded-2xl px-6 py-4;
+}
+
+section {
+  @apply mb-12;
+}
+
+input[type="button"].primary {
+  @apply bg-emerald-500 text-white hover:bg-emerald-600 border border-emerald-700;
+}
+
+input[type="button"] {
+  @apply font-medium px-4 py-3 bg-slate-200 hover:bg-slate-100 border border-slate-400 mr-2 mb-2 block dark:text-black;
 }
