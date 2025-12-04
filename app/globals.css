@@ -13,7 +13,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  @apply mb-3 text-blue-800 dark:text-blue-400 font-medium;
+  @apply mb-2 text-blue-800 dark:text-blue-400 font-medium;
 }
 
 h1 {
