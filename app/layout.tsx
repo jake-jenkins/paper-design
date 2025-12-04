@@ -18,7 +18,7 @@ export default function RootLayout({
             <div className="flex items-center">
               <div className="text-4xl font-extralight select-none">Paper</div>
               <div className="flex-1 text-end">
-                <a href="" className="px-4 py-2.5 border border-white rounded-2xl">Sign out</a>
+                <a href="" className="px-4 py-2.5 border border-blue-300 rounded-xl hover:bg-red-700 hover:border-red-600 text-base">Sign out</a>
               </div>
             </div>
           </header>
